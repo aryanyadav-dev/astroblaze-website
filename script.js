@@ -1,6 +1,4 @@
-// Initialize GSAP animations
 document.addEventListener('DOMContentLoaded', () => {
-    // Hero text animation
     gsap.from(".hero h1", {
       duration: 1.5,
       y: 100,
@@ -16,11 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
       delay: 0.3
     });
 
-    // Smooth scrolling for navigation links
     document.querySelectorAll('nav ul li a').forEach(link => {
         link.addEventListener('click', (e) => {
-            e.preventDefault(); // Prevent default anchor behavior
-            const targetId = link.getAttribute('href'); // Get target section ID
+            e.preventDefault(); 
+            const targetId = link.getAttribute('href'); 
             gsap.to(window, { 
                 duration: 1.5, 
                 scrollTo: targetId, 
@@ -29,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Vision Section Animation
     gsap.from(".vision-content", {
       scrollTrigger: "#vision",
       duration: 1,
@@ -38,7 +34,6 @@ document.addEventListener('DOMContentLoaded', () => {
       ease: "power3.out"
     });
 
-    // Projects Section Animation
     gsap.from(".project", {
       scrollTrigger: "#projects",
       duration: 1,
@@ -48,7 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
       ease: "power3.out"
     });
 
-    // Contact Form Animation
     gsap.from("form", {
       scrollTrigger: "#contact",
       duration: 1,

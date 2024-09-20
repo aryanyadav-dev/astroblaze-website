@@ -1,18 +1,17 @@
-/* Global Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: black; /* Keep the rest of the background black */
+    background-color: black; 
     color: white;
-    scroll-behavior: smooth; /* Smooth scrolling for all anchor links */
+    scroll-behavior: smooth; 
 }
 
-/* Navigation Styles */
+
 nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: black; /* Black background for nav */
+    background-color: black; 
     padding: 10px 0;
     text-align: center;
     z-index: 100;
@@ -33,18 +32,16 @@ nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
-    transition: color 0.3s; /* Smooth transition for hover */
-}
+    transition: color 0.3s; 
 
 nav ul li a:hover {
     color: gold;
 }
 
-/* Hero Section Styles */
 .hero {
     position: relative;
     height: 100vh;
-    background-image: url('images/rocket-team-bg.png'); /* Use your saved image here */
+    background-image: url('images/rocket-team-bg.png'); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -63,10 +60,9 @@ nav ul li a:hover {
     font-size: 1.5rem;
 }
 
-/* Our Vision Section Styles */
 .vision-section {
     padding: 100px 20px;
-    background-color: black; /* Black background */
+    background-color: black; 
 }
 
 .vision-section h2 {
@@ -84,10 +80,9 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Future Roadmap Section */
 .roadmap-section {
     padding: 50px 20px;
-    background-color: black; /* Black background */
+    background-color: black; 
 }
 
 .roadmap-section h2 {
@@ -105,36 +100,33 @@ nav ul li a:hover {
 
 .roadmap-item {
     max-width: 400px;
-    margin: 5px 0; /* Reduce vertical space between items */
+    margin: 5px 0; 
     position: relative;
-    padding: 0; /* Remove horizontal padding */
-}
+    padding: 0; 
 
-/* Alternate alignment */
 .roadmap-item.left {
-    align-self: flex-start; /* Aligns to the left */
-    text-align: right; /* Right-align text */
+    align-self: flex-start; 
+    text-align: right; 
 }
 
 .roadmap-item.right {
-    align-self: flex-end; /* Aligns to the right */
-    text-align: left; /* Left-align text */
+    align-self: flex-end; 
+    text-align: left; 
 }
 
 .roadmap-connector {
     position: absolute;
-    top: 0; /* Aligns with the top of the first item */
+    top: 0; 
     width: 2px;
-    height: 100%; /* Adjust as needed for visual appeal */
+    height: 100%; 
     background-color: white;
-    left: 50%; /* Center it */
-    transform: translateX(-50%); /* Center alignment */
+    left: 50%; 
+    transform: translateX(-50%); 
 }
 
-/* Projects Section */
 .projects-section {
     padding: 50px 20px;
-    background-color: black; /* Black background */
+    background-color: black; 
 }
 
 .projects-section h2 {
@@ -165,10 +157,9 @@ nav ul li a:hover {
     font-size: 1.1rem;
 }
 
-/* Contact Section */
 .contact-section {
     padding: 50px 20px;
-    background-color: black; /* Black background */
+    background-color: black; 
 }
 
 .contact-section h2 {
@@ -190,7 +181,7 @@ form input, form textarea {
     font-size: 1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #222; /* Dark input background */
+    background-color: #222; 
     color: white;
 }
 
@@ -206,7 +197,6 @@ form button:hover {
     background-color: gold;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .roadmap-container {
         flex-direction: column;
